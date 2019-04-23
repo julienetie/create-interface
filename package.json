@@ -1,0 +1,9 @@
+{
+  "name": "declarative-custom-elements",
+  "version": "0.0.1",
+  "description": "Create custom elements for declarative and functional programming",
+  "main": "index.js",
+  "repository": "git@github.com:julienetie/declarative-custom-elements.git",
+  "author": "Julien Etienne",
+  "license": "MIT"
+}

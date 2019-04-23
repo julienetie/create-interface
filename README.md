@@ -1,2 +1,2 @@
-# declarative-custom-elements
-Extend custom elements for declarative and functional programming
+# Declarative Custom Elements
+### Create custom elements for declarative and functional programming
