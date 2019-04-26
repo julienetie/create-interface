@@ -11,7 +11,7 @@ There are two way to use _createInterface_.
 ### Install 
 `npm install create-interface` or `yarn add create-interface`
 
-### Create an Autonomous/ Built-in Custom Element from an HTML Interface
+## Create an Autonomous/ Built-in Custom Element from an HTML Interface
 ```javascript 
 import createInterface from 'create-interface';
 
@@ -24,7 +24,7 @@ const newCustomElement = createInterface(
 customElements.define('new-cusomt-element', newCustomElement); 
 
 ```
-### Extend a Custom Element from a Custom Element 
+## Extend a Custom Element from a Custom Element 
 ```javascript 
 ...
 
