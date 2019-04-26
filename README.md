@@ -1,7 +1,7 @@
 # Create Interface
 ## Create custom elements for declarative and functional programming
 
-#### _createInterface_ is a [declarative](https://en.wikipedia.org/wiki/Declarative_programming) method that creates a [custom-element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) without using the [_class_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) syntax.
+> #### _createInterface_ is a [declarative](https://en.wikipedia.org/wiki/Declarative_programming) method that creates a [custom-element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) without using the [_class_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) syntax.
 
 _createInterface_ is preferred for declarative and [functional programming](https://wiki.haskell.org/Functional_programming#Features_of_functional_languages) paradigm styles. _createInterface_ inherits in the mannerism of 
 `Object.assign`. It will create a new custom element from a base element whilst inheriting the base element's callback functions. 
@@ -38,10 +38,10 @@ customElements.define('another-cusomt-element', anotherCustomElement);
 > The lifecycle callbacks are smilar to native _customElement_ callbacks but with some slight differences:
 
  ### adopted(element)
-> **_adopted_**  is the equivalence of **_adoptedCallback_** but without context. Instead it provides the active _element_ as an argument.
+> **_adopted_**  is the equivalence of [**_adoptedCallback_**](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks) but without context. Instead it provides the active _element_ as an argument.
 
  ### attributeChanged(element)
-> **_attributeChanged_** is the equivalence of **_attributeChangedCallback_** but without context. It provides the following argumetnts respectively: 
+> **_attributeChanged_** is the equivalence of [**_attributeChangedCallback_**](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks) but without context. It provides the following argumetnts respectively: 
 > - _element_
 > - _name_ 
 > - _oldValue_
@@ -49,13 +49,13 @@ customElements.define('another-cusomt-element', anotherCustomElement);
 
 
  ### disconnected(element)
-> **_disconnected_**  is the equivalence of **_disconnectedCallback_** but without context. Instead it provides the active _element_ as an argument.
+> **_disconnected_**  is the equivalence of [**_disconnectedCallback_**](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks) but without context. Instead it provides the active _element_ as an argument.
 
  ### connected(element)
-> **_connected_**  is the equivalence of **_connectedCallback_** but without context. Instead it provides the active _element_ as an argument.
+> **_connected_**  is the equivalence of [**_connectedCallback_**](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks) but without context. Instead it provides the active _element_ as an argument.
 
  ### observedAttributes(element)
-> **_observedAttributes_**  is the equivalence of **_static get observedAttributes()_** but without context. It expects an array of attribute names as a return value.
+> **_observedAttributes_**  is the equivalence of [**_static get observedAttributes()_**](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks) but without context. It expects an array of attribute names as a return value.
 
  ### Browser Support
 > This method does not provide polyfills. It is intended to support enviroments that support Custom Elements (V1).
