@@ -7,7 +7,7 @@ _createInterface_ is preferred for declarative and [functional programming](http
 `Object.assign`. It will create a new custom element from a base element whilst inheriting the base element's callback functions. 
 There are two way to use _createInterface_.
 
-#### Create an autonomous/ built-in Custom Element from an HTML interface
+### Create an Autonomous/ Built-in Custom Element from an HTML Interface
 ```javascript 
 import createInterface from 'create-interface';
 
@@ -20,7 +20,7 @@ const newCustomElement = createInterface(
 customElements.define('new-cusomt-element', newCustomElement); 
 
 ```
-#### Extend a Custom Element from a Custom Element 
+### Extend a Custom Element from a Custom Element 
 ```javascript 
 ...
 
