@@ -7,33 +7,41 @@ _createInterface_ is preferred for declarative and functional programming paradi
 `Object.assign`. It will create a new custom element from a base element whilst inheriting the base element's callback functions. 
 There are two way to use _createInterface_.
 
-## Create a Custom Element from a Built-in Element
+#### Create an autonomous/ built-in Custom Element from an HTML interface
 ```javascript 
 import createInterface from 'create-interface';
 
-const newCustomElement = createInterface('new-cusomt-element', HTMLElement, {...callbacks});
+const newCustomElement = createInterface(
+  'new-cusomt-element', 
+  HTMLElement, 
+  {...callbacks}
+);
 
 customElements.define('new-cusomt-element', newCustomElement); 
 
 ```
-## Extend a Custom Element from a Custom Element 
+#### Extend a Custom Element from a Custom Element 
 ```javascript 
 ...
 
-const anotherCustomElement = createInterface('new-cusomt-element', newCustomElement, {...newCallbacks});
+const anotherCustomElement = createInterface(
+  'new-cusomt-element',
+  newCustomElement,
+  {...newCallbacks}
+);
 
 customElements.define('another-cusomt-element', anotherCustomElement); 
 ```
 
 ## Lifecycle Callbacks
 
-Lifecycle callbacks are smilar to native callbacks with some slight differences: 
+The lifecycle callbacks are smilar to native _customElement_ callbacks but with some slight differences:
 
 ### adopted(element)
-_adopted_  is the equivalence of _adoptedCallback_ but without context. Instead it provides the active _element_ as an argument.
+**_adopted_**  is the equivalence of **_adoptedCallback_** but without context. Instead it provides the active _element_ as an argument.
 
 ### attributeChanged(element)
-_attributeChanged_ is the equivalence of _attributeChangedCallback_ but without context. It provides the following argumetnts respectively: 
+**_attributeChanged_** is the equivalence of **_attributeChangedCallback_** but without context. It provides the following argumetnts respectively: 
 - _element_
 - _name_ 
 - _oldValue_
@@ -41,13 +49,13 @@ _attributeChanged_ is the equivalence of _attributeChangedCallback_ but without 
 
 
 ### disconnected(element)
-_disconnected_  is the equivalence of _disconnectedCallback_ but without context. Instead it provides the active _element_ as an argument.
+**_disconnected_**  is the equivalence of **_disconnectedCallback_** but without context. Instead it provides the active _element_ as an argument.
 
 ### connected(element)
-_connected_  is the equivalence of _connectedCallback_ but without context. Instead it provides the active _element_ as an argument.
+**_connected_**  is the equivalence of **_connectedCallback_** but without context. Instead it provides the active _element_ as an argument.
 
 ### observedAttributes(element)
-_observedAttributes_  is the equivalence of _static get observedAttributes()_ but without context. It expects an array of attribute names as a return value.
+**_observedAttributes_**  is the equivalence of **_static get observedAttributes()_** but without context. It expects an array of attribute names as a return value.
 
 ## Browser Support
 This method does not provide polyfills. It is intended to support enviroments that support Custom Elements (V1).
