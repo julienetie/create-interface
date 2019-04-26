@@ -1,4 +1,5 @@
 # Create Interface
+
 ## Create custom elements for declarative and functional programming
 
 > #### _createInterface_ is a [declarative](https://en.wikipedia.org/wiki/Declarative_programming) method that creates a [custom-element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) without using the [_class_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) syntax.
@@ -6,6 +7,9 @@
 _createInterface_ is preferred for declarative and [functional programming](https://wiki.haskell.org/Functional_programming#Features_of_functional_languages) paradigm styles. _createInterface_ inherits in the mannerism of 
 `Object.assign`. It will create a new custom element from a base element whilst inheriting the base element's callback functions. 
 There are two way to use _createInterface_.
+
+### Install 
+`npm install create-interface` or `yarn add create-interface`
 
 ### Create an Autonomous/ Built-in Custom Element from an HTML Interface
 ```javascript 
