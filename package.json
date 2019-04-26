@@ -1,10 +1,10 @@
 {
   "name": "create-interface",
-  "version": "0.0.1",
-  "main": "index.js",
-  "jsnext:main": "index.js",
+  "version": "0.0.2",
+  "main": "create-interface.js",
+  "jsnext:main": "create-interface.js",
   "description": "Create custom elements for declarative and functional programming",
-  "repository": "git@github.com:julienetie/declarative-custom-elements.git",
+  "repository": "git@github.com:julienetie/create-interface.git",
   "author": "Julien Etienne",
   "scripts":{
   	"test": "./node_modules/.bin/http-server ./ "
