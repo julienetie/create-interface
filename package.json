@@ -1,9 +1,17 @@
 {
-  "name": "declarative-custom-elements",
+  "name": "create-interface",
   "version": "0.0.1",
-  "description": "Create custom elements for declarative and functional programming",
   "main": "index.js",
+  "jsnext:main": "index.js",
+  "description": "Create custom elements for declarative and functional programming",
   "repository": "git@github.com:julienetie/declarative-custom-elements.git",
   "author": "Julien Etienne",
-  "license": "MIT"
+  "scripts":{
+  	"test": "./node_modules/.bin/http-server ./ "
+  },
+  "license": "MIT",
+  "devDependencies": {	
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
 }
