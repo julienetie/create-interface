@@ -1,6 +1,6 @@
 {
   "name": "create-interface",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "create-interface.js",
   "jsnext:main": "create-interface.js",
   "description": "Create custom elements for declarative and functional programming",

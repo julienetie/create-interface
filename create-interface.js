@@ -1,8 +1,8 @@
 /** 
- * Extends a built-in interface. 
+ * Extends an HTML interface. 
  * Similar to class someElement extends HTMLElement {}
  * 
- * @param {string} name
+ * @param {string} name.
  * @param {Object} newTarget - The target to create an instance from.
  * @param {Object} callbacks - An object literal of declarative callback. 
  *  relative to the standard Custom Elements specification.
