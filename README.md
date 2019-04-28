@@ -44,7 +44,7 @@ customElements.define('another-cusomt-element', anotherCustomElement);
  ### _adopted(element)_
 > **_adopted_**  is the equivalence of [**_adoptedCallback_**](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks) but without context. Instead it provides the active _element_ as an argument.
 
- ### _attributeChanged(element)_
+ ### _attributeChanged(element,name, oldValue, newValue)_
 > **_attributeChanged_** is the equivalence of [**_attributeChangedCallback_**](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks) but without context. It provides the following argumetnts respectively: 
 > - _element_
 > - _name_ 
