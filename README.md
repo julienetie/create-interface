@@ -41,10 +41,10 @@ customElements.define('another-cusomt-element', anotherCustomElement);
 
 > The lifecycle callbacks are smilar to native _customElement_ callbacks but with some slight differences:
 
- ### adopted(element)
+ ### _adopted(element)_
 > **_adopted_**  is the equivalence of [**_adoptedCallback_**](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks) but without context. Instead it provides the active _element_ as an argument.
 
- ### attributeChanged(element)
+ ### _attributeChanged(element)_
 > **_attributeChanged_** is the equivalence of [**_attributeChangedCallback_**](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks) but without context. It provides the following argumetnts respectively: 
 > - _element_
 > - _name_ 
@@ -52,16 +52,16 @@ customElements.define('another-cusomt-element', anotherCustomElement);
 > - _newValue_
 
 
- ### disconnected(element)
+ ### _disconnected(element)_
 > **_disconnected_**  is the equivalence of [**_disconnectedCallback_**](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks) but without context. Instead it provides the active _element_ as an argument.
 
- ### connected(element)
+ ### _connected(element)_
 > **_connected_**  is the equivalence of [**_connectedCallback_**](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks) but without context. Instead it provides the active _element_ as an argument.
 
- ### observedAttributes(element)
+ ### _observedAttributes(element)_
 > **_observedAttributes_**  is the equivalence of [**_static get observedAttributes()_**](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks) but without context. It expects an array of attribute names as a return value.
 
- ### Browser Support
+ ## Browser Support
 > This method does not provide polyfills. It is intended to support enviroments that support Custom Elements (V1).
 Check for native support [here](https://caniuse.com/#feat=custom-elementsv1):
 
