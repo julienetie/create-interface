@@ -2,16 +2,20 @@
   "name": "create-interface",
   "version": "0.0.3",
   "main": "create-interface.js",
+  "type": "module",
   "jsnext:main": "create-interface.js",
   "description": "Create custom elements for declarative and functional programming",
   "repository": "git@github.com:julienetie/create-interface.git",
   "author": "Julien Etienne",
   "scripts": {
-    "test": "./node_modules/.bin/http-server ./ "
+    "test": "./node_modules/.bin/http-server ./  -o=./tests.html"
   },
   "license": "MIT",
   "dependencies": {
     "chai": "^5.1.0",
     "mocha": "^10.4.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }

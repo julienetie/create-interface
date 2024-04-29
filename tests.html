@@ -5,16 +5,17 @@
   <title>Explicit Elements</title>
   <link rel="stylesheet" href="/node_modules/mocha/mocha.css">
   <script src="/node_modules/mocha/mocha.js"></script>
-  <script src="/node_modules/chai/chai.js"></script>
+
   <script>mocha.setup('bdd')</script>
-  <script type="module" src="./tests.js"></script>
+ 
   <script>
       window.onload = ()=>{
         mocha.checkLeaks()
-        var runner = mocha.run();
-      };
-      const { expect } = chai;
+        const runner = mocha.run()
+      }
+     
   </script> 
+   <script type="module" src="./tests.js"></script>
 </head>
 <body>
   <div id="mocha"></div>
