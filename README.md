@@ -67,4 +67,4 @@ customElements.define('another-cusomt-element', anotherCustomElement);
 > This method does not provide polyfills. It is intended to support enviroments that support Custom Elements (V1).
 Check for native support [here](https://caniuse.com/#feat=custom-elementsv1):
 
-MIT 2019 Julien Etienne
+MIT 2024 Julien Etienne
