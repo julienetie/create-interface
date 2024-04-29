@@ -6,12 +6,12 @@
   "description": "Create custom elements for declarative and functional programming",
   "repository": "git@github.com:julienetie/create-interface.git",
   "author": "Julien Etienne",
-  "scripts":{
-  	"test": "./node_modules/.bin/http-server ./ "
+  "scripts": {
+    "test": "./node_modules/.bin/http-server ./ "
   },
   "license": "MIT",
-  "devDependencies": {	
-    "chai": "^4.2.0",
-    "mocha": "^6.1.4"
+  "dependencies": {
+    "chai": "^5.1.0",
+    "mocha": "^10.4.0"
   }
 }
