@@ -1,6 +1,8 @@
 # Create Interface
 
-## Create custom elements for declarative and functional programming
+## Create custom elements without classes
+
+Create Interface is not a wrapper around class, it's uses `Reflect.construct` internally for new instances and inheritance.
 
 > #### _createInterface_ is a [declarative](https://en.wikipedia.org/wiki/Declarative_programming) method that creates a [custom-element](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) without using the [_class_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) syntax.
 
